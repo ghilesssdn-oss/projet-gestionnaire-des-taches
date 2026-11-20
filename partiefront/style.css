@@ -9,34 +9,18 @@ body {
 
 }
 
-.menue {
-    display: grid;
-    align-content: start;
-    padding: 20px;
-    font-size: 18px;
+:root {
+    --bs-dark-rgb: 7, 7, 54;                         /* bg-dark devient bleu nuit */
 }
 
-a.nav-link {
-    display: inline-block;
-    color: white;
-    padding: 12px 20px;
-    text-decoration: none;
-    border-radius: 8px;
-    margin-bottom: 10px;
+.nav-pills {
+    --bs-nav-pills-link-active-bg: #1D4ED8;          /* bouton de la page active */
 }
 
-aside {
-    background-color: rgb(7, 7, 54);
-
-
+.nav-pills .nav-link:not(.active):hover {
+    background-color: rgba(255, 255, 255, .08);
 }
 
-a:hover {
-    background-color: rgba(255,255,255,.08);
-}
-.nav-link.active{
-    background-color: #1D4ED8;
-}
 
 .search {
     margin-left: 65%;
